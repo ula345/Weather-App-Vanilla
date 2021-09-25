@@ -4,29 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="src/style.css" />
+     <link rel="stylesheet" href="src/style.css" />
 
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   
     <title> 🌡 WeatherApp</title>
 </head>
-
 
 <body>
 <div class="container"> 
 <div class="weather-app-vanilla">
+    
+    <div class="overview">
       <h1 id="city"></h1>
         <ul>
-         <li> Firday 5:00  </li>
+         <li id="date">  </li>
         <li id="description"> </li>
         </ul>
-</div>
+        </div>
+
+
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-6">
+        <div class="clearfix weather-temperature">
         <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear"
         class="float-left"/>
-       <strong id="temperature"></strong> 
+       <div class="float-left"><strong id="temperature"></strong> 
+        <span class="units">°C | <a href="#">°F </a></span></div>
+     </div>
     </div>
 
     <div class="col-md-6"> 
@@ -36,11 +44,15 @@
         </ul>
     </div>
 </div>
+
 </div>
+</div>
+
 <div class="github-link">
 <small><a href="https://github.com/ula345/Weather-App-Vanilla" target="_blank"> 
         Open-source code</a> by Urszula Krzemińska</small>
 </div>
 <script src="src/app.js"> </script>
+
 </body>
 </html>
