@@ -1,43 +1,11 @@
 .weather-app-vanilla {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 50px auto;
   padding: 60px 60px 60px 60px;
-  border: 2px solid #bee7c7;
-  border-radius: 15px;
-}
-
-body {
-  font-family: "Roboto Mono", monospace;
-  margin-bottom: 50px;
-}
-
-button {
-  text-align: justify;
-  margin: 50px 180px;
-  font-size: 20px;
-  border: none;
-  padding: 15px 32px;
-  color: pink;
-  background-color: green;
-}
-
-h1 {
-  text-align: center;
-  color: red;
-}
-
-li {
-  color: red;
-  text-align: center;
-  list-style: none;
-}
-
-.overview {
-  margin-bottom: 350px;
 }
 
 .github-link {
   text-align: center;
   margin: auto;
-  color: pink;
+  color: rgb(199, 71, 92);
 }
