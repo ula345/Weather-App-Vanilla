@@ -1,28 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
-
-  animation: 10000ms ease-in-out infinite color-change;
-}
-
-@keyframes color-change {
-  0% {
-    background-color: rgb(126, 226, 226);
-  }
-  20% {
-    background-color: rgb(228, 209, 101);
-  }
-  40% {
-    background-color: rgb(216, 152, 152);
-  }
-  60% {
-    background-color: rgb(224, 161, 224);
-  }
-  80% {
-    background-color: rgb(124, 139, 124);
-  }
-  100% {
-    background-color: rgb(90, 206, 206);
-  }
+  background-image: url(../src/background.jpg);
+  background-position: center;
+  background-size: 150%;
+  background-repeat: no-repeat;
 }
 
 .weather-app-vanilla {
@@ -31,24 +11,7 @@ body {
   padding: 60px 60px 80px 60px;
   border: 2px solid #615f69;
   border-radius: 10px;
-}
-
-button#current-button {
-  border-radius: 2px;
-  width: 250px;
-  border: solid;
-  outline: none;
-  max-width: 100px;
-  margin: 10px;
-  padding: 10px;
-  background: #7c7c7c2b;
-  color: rgb(247, 113, 113);
-  display: center;
-}
-
-button#current-button:hover {
-  background-color: #949b95;
-  color: white;
+  background-color: white;
 }
 
 .overview {
@@ -104,7 +67,11 @@ li:first-letter {
 .github-link {
   text-align: center;
   margin: auto;
-  color: rgb(199, 71, 92);
+  color: rgb(207, 126, 126);
+}
+
+.link {
+  color: rgb(207, 126, 126);
 }
 
 .weather-temperature .active {
@@ -114,4 +81,22 @@ li:first-letter {
 
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+.weather-forecast-temperature {
+  font-size: 13px;
 }
